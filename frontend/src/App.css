@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('../public/font/Montserrat-VariableFont_wght.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Karrera';
+  src: local('Karrera'), url('../public/fonts/Karrera-Regular.otf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Anurati';
+  src: local('Anurati'), url('../public/fonts/Anurati-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Aquatico';
+  src: local('Aquatico'), url('../public/fonts/Aquatico-Regular.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Reckoner';
+  src: local('Reckoner'), url('../public/fonts/Reckoner.ttf');
+  font-weight: normal;
+}
+
+:root {
+  --primary-font: Karrera;
+  --secondary-font: Montserrat;
+  --anurati-font: Anurati;
+  --aquatico-font: Aquatico;
+  --reckoner-font: Reckoner;
+
+  /* FONT WEIGHT */
+  --font-normal: 400;
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  --font-extra-bold: 900;
+}

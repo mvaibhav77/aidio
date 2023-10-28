@@ -1,9 +1,30 @@
+import Upload from './Upload';
+
 function Navbar() {
   return (
-    <div className="flex h-screen items-center justify-center">
-      <h1 className="text-5xl text-gray-700 font-bold">
-        Naruto is better than One Piece
-      </h1>
+    <div className="bg-[#282828] p-4 lg:px-44">
+      <div className="navbar container mx-auto flex justify-between items-center">
+        <a
+          href="/"
+          className="font-aquatico tracking-wider text-3xl font-bold text-white"
+        >
+          <span className="font-anurati text-5xl">A</span>idio
+        </a>
+        <ul className="flex space-x-4">
+          <li>
+            <a href="/home" className="text-white">
+              About
+            </a>
+          </li>
+          <li>
+            <a href="/about" className="text-white">
+              How this works?
+            </a>
+          </li>
+        </ul>
+      </div>
+      {/* Upload Component */}
+      <Upload />
     </div>
   );
 }
