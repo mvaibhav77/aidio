@@ -47,7 +47,7 @@ function About() {
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 px-6 font-secondary text-sm leading-6 text-gray-600 px-4 pb-4">
+                <p className="mt-5 px-4 font-secondary text-sm leading-6 text-gray-600  pb-4">
                   {post.description}
                 </p>
               </div>
