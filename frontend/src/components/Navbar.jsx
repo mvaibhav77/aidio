@@ -1,4 +1,5 @@
 import Upload from './Upload';
+// import About from './About';
 
 function Navbar() {
   return (
@@ -12,12 +13,12 @@ function Navbar() {
         </a>
         <ul className="flex space-x-4">
           <li>
-            <a href="/home" className="text-white">
+            <a href="" className="text-white">
               About
             </a>
           </li>
           <li>
-            <a href="/about" className="text-white">
+            <a href="#how" className="text-white">
               How this works?
             </a>
           </li>
@@ -25,7 +26,9 @@ function Navbar() {
       </div>
       {/* Upload Component */}
       <Upload />
+      {/* <About /> */}
     </div>
+   
   );
 }
 
