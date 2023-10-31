@@ -3,7 +3,7 @@ import Upload from './Upload';
 
 function Navbar() {
   return (
-    <div className="bg-[#282828] p-40 py-4 md:p-4">
+    <div className="bg-[#282828] p-40 py-4 md:p-5">
       <div className="navbar container mx-auto max-w-7xl flex justify-between items-center">
         <a
           href="/"
@@ -18,7 +18,7 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="#how" className="text-white">
+            <a href="#how" className="text-white md:pr-3">
               How this works?
             </a>
           </li>
