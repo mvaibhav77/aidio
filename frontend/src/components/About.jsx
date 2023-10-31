@@ -2,7 +2,6 @@ const posts = [
   {
     id: 1,
     title: 'Boost your conversion rate',
-    href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
   },
@@ -10,14 +9,13 @@ const posts = [
   {
     id: 2,
     title: 'Boost your sjkld  conversion rate',
-    href: '#',
+    
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.',
   },
   {
     id: 3,
     title: 'Boost your conversion rate',
-    href: '#',
     description:
       'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
   },
@@ -26,7 +24,7 @@ const posts = [
 
 function About() {
   return (
-    <div className="bg-white py-24 sm:py-10">
+    <div className="bg-white py-24 sm:py-10 md:py-10">
       <div className="mx-auto max-w-7xl px-6 ">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
@@ -47,12 +45,12 @@ function About() {
             >
               <div className="group relative">
                 <h3 className="mt-3  text-center font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
-                  <a href={post.href}>
-                    <span className="absolute inset-0" />
+                  <a>
+                    <span className="absolute inset-0 " />
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 px-6  text-sm leading-6 text-gray-600 p-4">
+                <p className="mt-5 px-6 font-secondary text-sm leading-6 text-gray-600 px-4 pb-4">
                   {post.description}
                 </p>
               </div>

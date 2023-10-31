@@ -1,6 +1,6 @@
 function Upload() {
   return (
-    <div className="grid grid-cols-2 md:grid-cols-1 px-16 md:px-8 my-20 gap-8 items-center">
+    <div className="grid grid-cols-2 md:grid-cols-1 px-16 md:px-8 my-20 gap-8 items-center ">
       <div className="text-white">
         <h1 className="font-primary text-4xl">DEEPFAKE DETECTION</h1>
         <p className="mt-4 w-3/5">
