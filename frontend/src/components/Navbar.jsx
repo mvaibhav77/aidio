@@ -3,8 +3,8 @@ import Upload from './Upload';
 
 function Navbar() {
   return (
-    <div className="bg-[#282828] p-4 lg:px-44">
-      <div className="navbar container mx-auto flex justify-between items-center">
+    <div className="bg-[#282828] p-40 py-4 md:p-4">
+      <div className="navbar container mx-auto max-w-7xl flex justify-between items-center">
         <a
           href="/"
           className="font-aquatico tracking-wider text-3xl font-bold text-white"
@@ -28,7 +28,6 @@ function Navbar() {
       <Upload />
       {/* <About /> */}
     </div>
-   
   );
 }
 

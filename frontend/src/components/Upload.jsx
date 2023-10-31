@@ -10,11 +10,11 @@ function Upload() {
           perferendis quae voluptate at sed eius.
         </p>
       </div>
-      <div className="text-black grid grid-rows-2 gap-4">
-        <button className="p-4 text-white bg-dark border-2 rounded-xl h-fit max-w-md">
+      <div className="text-black grid grid-rows-2 gap-6 justify-self-end	">
+        <button className="p-4 text-white bg-dark border-2 rounded-xl h-fit w-72 md:w-60">
           Upload Audio
         </button>
-        <button className="p-4 bg-white h-fit rounded-xl max-w-md">
+        <button className="p-4 bg-white h-fit rounded-xl w-72 md:w-60">
           Validate
         </button>
       </div>
