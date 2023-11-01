@@ -3,7 +3,7 @@ import Upload from './Upload';
 
 function Navbar() {
   return (
-    <div className="bg-[#282828] p-40 py-4 md:p-5">
+    <div className="bg-[#282828] flex flex-col items-center p-40 py-4 md:p-5 md:h-screen">
       <div className="navbar container mx-auto max-w-7xl flex justify-between items-center">
         <a
           href="/"
