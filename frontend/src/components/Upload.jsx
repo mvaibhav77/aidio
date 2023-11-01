@@ -13,10 +13,10 @@ function Upload() {
         </p>
       </div>
       <div className="text-black grid grid-rows-2 gap-6 justify-self-end md:justify-self-center md:p-4">
-        <button className="p-4 text-white bg-dark border-2 rounded-xl h-fit w-72 md:w-100 ">
+        <button className="p-4 text-white bg-dark border-2 group hover:bg-white hover:shadow-lg hover:border-transparent hover:text-black rounded-xl h-fit w-72 md:w-100 ">
           Upload Audio
         </button>
-        <button className="p-4 bg-white h-fit rounded-xl w-72 md:w-100">
+        <button className="p-4 bg-white h-fit group hover:bg-transparent hover:shadow-lg hover:border-2 hover:text-white rounded-xl w-72 md:w-100">
           Validate
         </button>
       </div>
