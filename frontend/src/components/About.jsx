@@ -38,16 +38,16 @@ function About() {
           {posts.map((post) => (
             <article
               key={post.id}
-              className=" bg-stone-200 border-solid border-2 border-black rounded flex max-w-xl flex-col items-start justify-between"
+              className="motion-safe:hover:scale-110 group hover:bg-[#282828] hover:shadow-lg hover:border-transparent border-solid border-2 border-black rounded-md flex max-w-xl flex-col items-start justify-between"
             >
               <div className="group relative">
-                <h3 className="mt-3  text-center font-semibold leading-6 text-gray-900 group-hover:text-gray-600">
+                <h3 className="mt-3  text-center font-semibold leading-6 text-gray-900 group-hover:text-white">
                   <a>
                     <span className="absolute inset-0 " />
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 px-4 font-secondary text-sm leading-6 text-gray-600  pb-4">
+                <p className="mt-5 px-4 font-secondary text-sm leading-6 text-gray-600 group-hover:text-white pb-4">
                   {post.description}
                 </p>
               </div>
