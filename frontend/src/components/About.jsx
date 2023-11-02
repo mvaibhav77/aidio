@@ -1,24 +1,29 @@
 const posts = [
   {
     id: 1,
-    title: 'Boost your conversion rate',
+    title: 'Analyzing Spectrograph',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+      'Our web app employs sophisticated spectrograph analysis to distinguish genuine audio from deepfakes, ensuring unparalleled accuracy in audio verification.',
   },
 
   {
     id: 2,
-    title: 'Boost your sjkld  conversion rate',
-    
+    title: 'Better Accuracy',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel.',
+      'Benefit from the most precise deepfake identification, thanks to our cutting-edge technology, providing unparalleled results in audio analysis.',
   },
   {
     id: 3,
-    title: 'Boost your conversion rate',
+    title: 'User Friendly',
     description:
-      'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+      'With a sleek and intuitive interface, our web app makes deepfake detection accessible to all users, regardless of their technical expertise.',
   },
+  // {
+  //   id: 4,
+  //   title: 'Boost your conversion rate',
+  //   description:
+  //     'Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.',
+  // },
   // More posts...
 ];
 
@@ -38,16 +43,17 @@ function About() {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="motion-safe:hover:scale-110 group hover:bg-[#282828] hover:shadow-lg hover:border-transparent border-solid border-2 border-black rounded-md flex max-w-xl flex-col items-start justify-between"
+              className="motion-safe:hover:scale-110 group hover:bg-[#282828] 
+               hover:shadow-lg ease-in duration-200 hover:border-transparent border-solid border-2 border-black rounded-md flex max-w-xl flex-col items-start justify-between min-h-[200px] md:min-h-0"
             >
               <div className="group relative">
-                <h3 className="mt-3  text-center font-semibold leading-6 text-gray-900 group-hover:text-white">
+                <h3 className="mt-6 font-reckoner text-center text-3xl leading-6 text-gray-900 group-hover:text-white">
                   <a>
                     <span className="absolute inset-0 " />
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 px-4 font-secondary text-sm leading-6 text-gray-600 group-hover:text-white pb-4">
+                <p className="mt-5 px-8 font-secondary ease-in duration-200 text-md leading-6 text-gray-600 group-hover:text-white pb-4">
                   {post.description}
                 </p>
               </div>
