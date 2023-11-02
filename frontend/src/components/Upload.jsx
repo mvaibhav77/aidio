@@ -18,7 +18,7 @@ function Upload() {
           Upload Audio
         </button>
         <button className="p-4 bg-white h-fit group hover:bg-transparent hover:shadow-lg hover:border-2 hover:text-white rounded-xl w-72 md:w-100">
-          Validate
+          Detect
         </button>
       </form>
     </div>
