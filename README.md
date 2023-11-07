@@ -3,7 +3,7 @@ NOTE:-
 - Check package.json file to check the scripts which run the backend and frontend
 - Only use npm to install dependency.
 - Check directory before installing dependency.
-- for backend, directory is ```aidio/```
+- for backend, directory is ```aidio/backend```
 - for frontend npm package, directory is ```aidio/frontend```
 
 ### Installing dependency and starting frontend
