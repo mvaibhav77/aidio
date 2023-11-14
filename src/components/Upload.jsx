@@ -41,7 +41,7 @@ function Upload() {
           className="p-4 bg-white h-fit group hover:bg-gray-400 hover:shadow-lg hover:border-2 hover:text-white rounded-xl w-72 md:w-100"
           onClick={handleValidate}
         >
-          Validate
+          Detect
         </button>
       </form>
     </div>
