@@ -1,6 +1,6 @@
 import './App.css';
 import Navbar from './components/Navbar';
-import About from './components/About';
+import Info from './components/Info';
 import Result from './components/Result';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -11,7 +11,7 @@ function App() {
     <ModelProvider>
       <Navbar />
       <Result />
-      <About />
+      <Info />
       <ToastContainer />
     </ModelProvider>
   );
