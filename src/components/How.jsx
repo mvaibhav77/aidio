@@ -4,24 +4,30 @@ const posts = [
       title: 'Analyzing Spectrograph',
       description:
         'Our web app employs sophisticated spectrograph analysis to distinguish genuine audio from deepfakes, ensuring unparalleled accuracy in audio verification.',
-    },]
-// function About(){
-//     return(
-//         <h1>Introducing our cutting-edge Deepfake Detection App! Unmask deepfakes
-//         with ease by simply uploading an audio file. Using advanced
-//         spectrograph analysis, we accurately determine whether the audio is
-//         genuine or digitally altered. Protect your trust and authenticity with
-//         our reliable deepfake detection solution.</h1>
-//     )
-// }
-function About( showDevice, toggleDevice )  {
+    },
+  
+    {
+      id: 2,
+      title: 'Better Accuracy',
+      description:
+        'Benefit from the most precise deepfake identification, thanks to our cutting-edge technology, providing unparalleled results in audio analysis.',
+    },
+    {
+      id: 3,
+      title: 'User Friendly',
+      description:
+        'With a sleek and intuitive interface, our web app makes deepfake detection accessible to all users, regardless of their technical expertise.',
+    },
+  ];
+  
+  function How( showDevice, toggleDevice )  {
     return (
         <div id="container" data-show={showDevice}>
-        <div className="galaxy-container" onClick={toggleDevice('iphone')}>
+        <div className="galaxy-container" onClick={toggleDevice('galaxy')}>
         <div className="mx-auto max-w-2xl lg:mx-0">
             <h2
               className="text-3xl font-primary tracking-tight text-gray-900 sm:text-4xl"
-              id="iphone"
+              id="galaxy"
             >
               About
             </h2>
@@ -85,4 +91,5 @@ function About( showDevice, toggleDevice )  {
       
     );
   }
-export default About;
+  export default How;
+  
