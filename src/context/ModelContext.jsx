@@ -1,4 +1,5 @@
 import { createContext, useState } from 'react';
+import { toast } from 'react-toastify';
 
 const ModelContext = createContext();
 
@@ -37,6 +38,7 @@ export const ModelProvider = ({ children }) => {
       .catch((error) => {
         // Handle errors
         setIsLoading(false);
+        toast.error('Something went wrong!!!');
         console.error('Error:', error);
       });
   };
@@ -53,14 +55,19 @@ export const ModelProvider = ({ children }) => {
       .then((response) => response.json())
       .then((data) => {
         // Handle the response data
-        setIsLoading(false);
-        setIsAudioFill(false);
-        console.log(data);
-        setOutput(data);
+        if (data.status === 5 || data.status < 0) {
+          setIsLoading(false);
+          setIsAudioFill(false);
+          console.log(data);
+          setOutput(data);
+        } else {
+          validateAudio();
+        }
       })
       .catch((error) => {
         // Handle errors
         setIsLoading(false);
+        toast.error('Something went wrong!!!');
         console.error('Error:', error);
       });
   };

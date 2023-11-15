@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import { toast } from 'react-toastify';
 import ModelContext from '../context/ModelContext';
 import Loader from '../components/Shared/Loader';
 import { FaCheck } from 'react-icons/fa6';
@@ -15,7 +16,11 @@ function Upload() {
   // Handle Validate Function
   const handleValidate = (e) => {
     e.preventDefault();
-    validateAudio();
+    if (isAudioFill) {
+      validateAudio();
+    } else {
+      toast.error('No Audio Uploaded');
+    }
   };
   return (
     <div className="grid grid-cols-2 md:grid-cols-1 px-16 md:px-8 my-20 gap-8 items-center md:h-full ">
@@ -24,11 +29,11 @@ function Upload() {
           DEEPFAKE DETECTION
         </h1>
         <p className="mt-4 w-4/5 md:mt-6 md:w-full md:text-center">
-          Introducing our cutting-edge web app! Unmask deepfakes with ease by
-          simply uploading an audio file. Using advanced spectrograph analysis,
-          we accurately determine whether the audio is genuine or digitally
-          altered. Protect your trust and authenticity with our reliable
-          deepfake detection solution.
+          Introducing our cutting-edge Deepfake Detection App! Unmask deepfakes
+          with ease by simply uploading an audio file. Using advanced
+          spectrograph analysis, we accurately determine whether the audio is
+          genuine or digitally altered. Protect your trust and authenticity with
+          our reliable deepfake detection solution.
         </p>
       </div>
       <form className="text-black grid grid-rows-2 gap-6 justify-self-end md:justify-self-center md:p-4">
