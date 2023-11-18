@@ -1,13 +1,19 @@
-import spinner from '../../assets/Infinity-1.4s-190px.svg';
-
+import { cardio } from 'ldrs'
+cardio.register()
 function Loader() {
   return (
-    <img
-      src={spinner}
-      alt="Loading..."
-      style={{ width: '100px', margin: 'auto', display: 'block' }}
-    />
+    <l-cardio
+  size="50"
+  stroke="4"
+  speed="1" 
+  color="red" 
+  ></l-cardio>
   );
 }
 
 export default Loader;
+
+
+
+
+// Default values shown
