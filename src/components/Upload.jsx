@@ -3,7 +3,14 @@ import { toast } from 'react-toastify';
 import ModelContext from '../context/ModelContext';
 import Loader from '../components/Shared/Loader';
 import { FaCheck } from 'react-icons/fa6';
-
+import { MdOutlineCloudUpload } from "react-icons/md";
+function UploadAudio(){
+  return(
+    <div className='flex'>
+    <MdOutlineCloudUpload className='mr-3 my-1 ' /> Upload Audio
+    </div>
+  )
+}
 function Upload() {
   const { isLoading, isAudioFill, uploadAudio, validateAudio } =
     useContext(ModelContext);
@@ -37,9 +44,9 @@ function Upload() {
         </p>
       </div>
       <form className="text-black grid grid-rows-2 gap-6 justify-self-end md:justify-self-center md:p-4">
-        <label className="p-4 text-white bg-dark flex flex-row border-2 group justify-center hover:bg-gray-400 hover:shadow-lg hover:border-transparent hover:text-black rounded-xl h-fit w-72 md:w-100">
+        <label className=" p-4 text-white bg-dark flex flex-row border-2 group justify-center hover:bg-gray-400 hover:shadow-lg hover:border-transparent hover:text-black rounded-xl h-fit w-72 md:w-100">
           <input type="file" className="hidden" onChange={handleChange} />
-          {isLoading ? <Loader /> : 'Upload Audio'}
+          {isLoading ? <Loader /> : <UploadAudio/> } 
           {isAudioFill ? <FaCheck className="mx-4" /> : ''}
         </label>
         <button
@@ -54,3 +61,4 @@ function Upload() {
 }
 
 export default Upload;
+{/* <MdOutlineCloudUpload className='mr-3 my-1 ' /> */}

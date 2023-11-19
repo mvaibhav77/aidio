@@ -43,7 +43,7 @@ function About() {
           {posts.map((post) => (
             <article
               key={post.id}
-              className="motion-safe:hover:scale-110 group hover:bg-[#282828] 
+              className="motion-safe:hover:scale-110 group hover:bg-[#191a19] 
                hover:shadow-lg ease-in duration-200 hover:border-transparent border-solid border-2 border-black rounded-md flex max-w-xl flex-col items-start justify-between min-h-[200px] md:min-h-0"
             >
               <div className="group relative">

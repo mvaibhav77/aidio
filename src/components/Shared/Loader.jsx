@@ -6,7 +6,7 @@ function Loader() {
   size="50"
   stroke="4"
   speed="1" 
-  color="red" 
+  color="white" 
   ></l-cardio>
   );
 }
