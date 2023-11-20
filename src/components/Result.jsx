@@ -5,6 +5,9 @@ import Loader from './Shared/Loader';
 function Result() {
   const { output, isLoading } = useContext(ModelContext);
 
+  // const glass={
+
+  // }
   const printResult = () => {
     if (output.status < 0) {
       return (
@@ -31,7 +34,7 @@ function Result() {
   return isLoading ? (
     <Loader />
   ) : (
-    <div className="p-4">
+    <div className="p-4 glss">
       {Object.keys(output).length !== 0 && printResult()}
     </div>
   );
