@@ -49,10 +49,15 @@ body{
   scrollbar-width: none;  /* Firefox */
 }
 .glass{
-background: rgba(255, 255, 255, 0.24);
-border-radius: 16px;
-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-backdrop-filter: blur(10.2px);
--webkit-backdrop-filter: blur(10.2px);
-border: 1px solid rgba(255, 255, 255, 0.02);
+  /* background: rgba(193, 137, 206, 0.15); */
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(9.9px);
+  border: 1px solid rgba(193, 137, 206, 0.43);
+  
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
 }
