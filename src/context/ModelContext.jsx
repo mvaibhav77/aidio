@@ -10,9 +10,11 @@ export const ModelProvider = ({ children }) => {
   const [audioID, setAudioID] = useState(null);
   const [output, setOutput] = useState({});
   const [isAudioFill, setIsAudioFill] = useState(false);
+  const [showResult, setShowResult] = useState(false);
 
   //  Upload audio file
   const uploadAudio = async (audio) => {
+    console.log('Uploading audio....');
     setAudioID(audio);
     setIsAudioFill(false);
     setIsLoading(true);
@@ -45,6 +47,7 @@ export const ModelProvider = ({ children }) => {
 
   //   Validate audio file
   const validateAudio = async () => {
+    console.log('Validating audio....');
     setIsLoading(true);
     fetch(`${url}/status/?id=${audioID}`, {
       method: 'GET',
@@ -60,6 +63,7 @@ export const ModelProvider = ({ children }) => {
           setIsAudioFill(false);
           console.log(data);
           setOutput(data);
+          setShowResult(true);
         } else {
           validateAudio();
         }
@@ -76,6 +80,7 @@ export const ModelProvider = ({ children }) => {
     <ModelContext.Provider
       value={{
         isLoading,
+        showResult,
         audioID,
         output,
         isAudioFill,

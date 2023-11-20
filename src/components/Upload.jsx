@@ -3,13 +3,13 @@ import { toast } from 'react-toastify';
 import ModelContext from '../context/ModelContext';
 import Loader from '../components/Shared/Loader';
 import { FaCheck } from 'react-icons/fa6';
-import { MdOutlineCloudUpload } from "react-icons/md";
-function UploadAudio(){
-  return(
-    <div className='flex'>
-    <MdOutlineCloudUpload className='mr-3 my-1 ' /> Upload Audio
+import { MdOutlineCloudUpload } from 'react-icons/md';
+function UploadAudio() {
+  return (
+    <div className="flex">
+      <MdOutlineCloudUpload className="mr-3 my-1 " /> Upload Audio
     </div>
-  )
+  );
 }
 function Upload() {
   const { isLoading, isAudioFill, uploadAudio, validateAudio } =
@@ -30,7 +30,7 @@ function Upload() {
     }
   };
   return (
-    <div className="grid grid-cols-2 md:grid-cols-1 px-16 md:px-8 my-20 gap-8 items-center md:h-full ">
+    <div className="grid grid-cols-2 md:grid-cols-1 px-16 md:px-8 my-28 gap-8 items-center md:h-full ">
       <div className="text-white">
         <h1 className="font-primary text-4xl md:text-center">
           DEEPFAKE DETECTION
@@ -46,7 +46,7 @@ function Upload() {
       <form className="text-black grid grid-rows-2 gap-6 justify-self-end md:justify-self-center md:p-4">
         <label className=" p-4 text-white bg-dark flex flex-row border-2 group justify-center hover:bg-gray-400 hover:shadow-lg hover:border-transparent hover:text-black rounded-xl h-fit w-72 md:w-100">
           <input type="file" className="hidden" onChange={handleChange} />
-          {isLoading ? <Loader /> : <UploadAudio/> } 
+          {isLoading ? <Loader /> : <UploadAudio />}
           {isAudioFill ? <FaCheck className="mx-4" /> : ''}
         </label>
         <button
@@ -61,4 +61,6 @@ function Upload() {
 }
 
 export default Upload;
-{/* <MdOutlineCloudUpload className='mr-3 my-1 ' /> */}
+{
+  /* <MdOutlineCloudUpload className='mr-3 my-1 ' /> */
+}

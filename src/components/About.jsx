@@ -29,31 +29,31 @@ const posts = [
 
 function About() {
   return (
-    <div className="bg-white py-24 sm:py-10 md:py-10">
+    <div className="bg-black text-white py-24 sm:py-10 md:py-10">
       <div className="mx-auto max-w-7xl px-6 ">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2
-            className="text-3xl font-primary tracking-tight text-gray-900 sm:text-4xl"
+            className="text-3xl font-primary tracking-tight sm:text-4xl"
             id="how"
           >
             HOW THIS WORKS
           </h2>
         </div>
-        <div className=" mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-20 gap-y-16 border-t md:p-4 border-gray-200 pt-10 sm:mt-8 sm:pt-8 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        <div className=" mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-20 gap-y-16 border-t border-gray-200 pt-20 sm:mt-8  lg:mx-0 lg:max-w-none lg:grid-cols-3">
           {posts.map((post) => (
             <article
               key={post.id}
-              className="motion-safe:hover:scale-110 group hover:bg-[#191a19] 
-               hover:shadow-lg ease-in duration-200 hover:border-transparent border-solid border-2 border-black rounded-md flex max-w-xl flex-col items-start justify-between min-h-[200px] md:min-h-0"
+              className="motion-safe:hover:scale-110 group hover:bg-white
+               hover:shadow-lg ease-in duration-200 hover:border-transparent border-solid border-2 border-white rounded-md flex max-w-xl flex-col items-center justify-between min-h-[200px] md:min-h-0"
             >
               <div className="group relative">
-                <h3 className="mt-6 font-reckoner text-center text-3xl leading-6 text-gray-900 group-hover:text-white">
+                <h3 className="mt-6 font-reckoner text-center text-3xl leading-6 group-hover:text-black">
                   <a>
                     <span className="absolute inset-0 " />
                     {post.title}
                   </a>
                 </h3>
-                <p className="mt-5 px-8 font-secondary ease-in duration-200 text-md leading-6 text-gray-600 group-hover:text-white pb-4">
+                <p className="mt-5 px-8 font-secondary ease-in duration-200 text-md leading-6 group-hover:text-black pb-4">
                   {post.description}
                 </p>
               </div>
